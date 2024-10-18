@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <div class="left-section">
@@ -22,30 +24,34 @@
             </div>
             <div class="content">
                 <p>
-                    เว็บไซต์นี้ทำมาสำหรับการจองที่นั่งสำหรับงาน WU Freshy Awards <br>โดยจัดสถานที่มหาวิทยาลัยวลัยลักษณ์ ณ อาคารไทยบุรี
+                    เว็บไซต์นี้ทำมาสำหรับการจองที่นั่งสำหรับงาน WU Freshy Awards <br>โดยจัดสถานที่มหาวิทยาลัยวลัยลักษณ์
+                    ณ อาคารไทยบุรี
                 </p>
-                <a href="welcome">
+                <a href="login">
                     <button>
                         ลงชื่อเข้าใช้
                     </button>
                 </a>
-                <div>
-                    <a>ใช้งานไม่เป็นหรอ</a>
-                    <a href="">กดตรงนี้ได้น่ะ</a>
+
+                <div class="bg">
+                    <a>คลิปแนะนำการใช้งาน</a>
+                    <a href="video">กดตรงนี้</a>
                 </div>
             </div>
         </div>
     </div>
-        <div class="right-section">
-            <div class="box">
-                <div align="center">
-                    <div class="text-Vdo">คลิปวิดีโอแนะนำการใช้งานเว็บไซต์</div>
-                </div>
-                <div>
-                    <iframe width="274.285714286" height="154.285714286" src="Free Green Screen - Realistic Light Bulb.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+    <div class="right-section">
+        <div class="box">
+            <div align="center">
+                <div class="text-Vdo">คลิปวิดีโอแนะนำการใช้งานเว็บไซต์</div>
+            </div>
+            <div>
+                <video width="274.285714286" height="154.285714286" controls>
+                    <source src="Bulb.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
+    </div>
     </div>
     <section>
         <div class='air air1'></div>
@@ -60,4 +66,5 @@
         <div id='stars4'></div>
     </div><!-- / STAR ANIMATION --></div>
 </body>
+
 </html>
