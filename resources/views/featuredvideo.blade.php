@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WU Freshy Awards</title>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="./../css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
 
         .text-Vdo {
             font-weight: 500;
-            font-size: 36px;
+            font-size: 24px;
             margin-bottom: 1vh;
             color: #ffffff;
         }
@@ -84,12 +84,12 @@
 
 <body>
     <!-- เพิ่มปุ่มย้อนกลับ -->
-    <a href="/" class="back-button">&#8592; กลับ</a>
+    <a href="{{ route('home') }}" class="back-button">&#8592; กลับ</a>
 
     <div class="video-container">
         <div class="text-Vdo">คลิปวิดีโอแนะนำการใช้งานเว็บไซต์</div>
         <video controls allowfullscreen>
-            <source src="Bulb.mp4" type="video/mp4">
+            <source src="./../Bulb.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>

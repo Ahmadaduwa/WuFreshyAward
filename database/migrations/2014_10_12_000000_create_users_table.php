@@ -12,13 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
+            $table->id();  // Primary Key
+            $table->string('username')->unique();  // username ไม่ซ้ำกัน
+            $table->string('password');  // password
+            $table->string('name');  // name
+            $table->string('seat')->unique();  // seat ไม่ซ้ำกัน
+            $table->boolean('reserved')->default(false);  // reserved
+            $table->string('pin')->unique();  // pin ไม่ซ้ำกัน
+            $table->boolean ('arrived')->default(false); 
+            $table->timestamps();  // created_at, updated_at
         });
     }
 
